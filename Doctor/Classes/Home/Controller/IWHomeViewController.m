@@ -8,8 +8,17 @@
 
 #import "IWHomeViewController.h"
 #import "IWHealthFileViewController.h"
+#import "IWScrollHeaderView.h"
+#import "IWHomeTool.h"
+#import "IWNavigationController.h"
+#import "IWBanner.h"
+#import "IWUserTool.h"
+#import "IWUser.h"
+#import "IWCompanyTool.h"
+#import "TPKeyboardAvoidingScrollView.h"
 
 @interface IWHomeViewController ()
+@property (nonatomic, weak) IWScrollHeaderView *scrollhHeaderView;
 
 @property (nonatomic, weak) UIButton *familyHealthFileBtn;
 
@@ -64,16 +73,28 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    
+    // 设置基本属性
+    [self setupBase];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    self.navigationController.navigationBar.hidden = NO;
+    
+    // 删除系统自动生成的UITabBarButton
+    for (UIView *child in self.tabBarController.tabBar.subviews) {
+        if ([child isKindOfClass:[UIControl class]]) {
+            [child removeFromSuperview];
+        }
+    }
 }
-*/
+
+- (void)setupBase {
+    self.navigationItem.title = NSLocalizedString(@"", nil);
+}
+
+
 
 @end
