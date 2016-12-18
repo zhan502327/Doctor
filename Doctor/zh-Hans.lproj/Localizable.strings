@@ -1,0 +1,131 @@
+/* 
+  Localizable.strings
+  Doctor
+
+  Created by 范超 on 16/12/17.
+
+*/
+
+"MJRefreshFooterPullToRefresh" = "上拉加载更多数据";
+"MJRefreshFooterReleaseToRefresh" = "松开立即加载更多数据";
+"MJRefreshFooterRefreshing" = "正在拼命加载数据...";
+"MJRefreshHeaderPullToRefresh" = "上拉可以刷新";
+"MJRefreshHeaderReleaseToRefresh" = "松开立即刷新";
+"MJRefreshHeaderRefreshing" = "正在刷新...";
+"MJRefreshLastUpdate" = "最后更新：";
+"MJToady" = "今天";
+
+// 错误
+"net_error" = "网络不给力,请等会再试~";
+"read_notification_error" = "读取错误";
+
+// 首页
+"home" = "主页";
+"contact" = "医疗热线";
+"me" = "我";
+
+// 登录界面
+"login" = "登录";
+"cellphone" = "手机号";
+"password" = "密码";
+"login_now" = "登录";
+"forget_password" = "忘记密码?";
+"register" = "注册";
+"login_success" = "登录成功";
+"login_loading" = "正在登录...";
+"register_loading" = "正在提交注册信息...";
+"find_password_loading" = "正在重置密码...";
+"register_success" = "注册成功";
+"register_now" = "立即注册";
+"register_sc_fail" = "获取验证码失败";
+
+// 找回密码
+"find_password" = "找回密码";
+"find_password_cellphone" = "通过手机找回";
+"find_password_email" = "通过邮箱找回";
+"find_password_answer" = "通过安全问题找回";
+"find_password_ok" = "确认";
+"find_password_next" = "下一步";
+"confirm_password_error" = "确认密码不正确";
+"find_password_success" = "重置密码成功";
+"find_password_fail" = "重置密码失败";
+"change_success" = "修改成功";
+"change_fail" = "修改失败";
+
+// 我
+"birthday" = "生日";
+"address" = "住址";
+"email" = "个人邮箱";
+"cellphone" = "手机号";
+"change_password" = "修改密码";
+"relative_company" = "关联公司管理";
+"message" = "系统消息";
+"setting_birthday" = "生日设置";
+"setting_email" = "邮箱设置";
+"person_email" = "个人邮箱";
+"finish" = "完成";
+"change_userinfo_loading" = "正在提交修改信息...";
+"set_success" = "设置成功";
+"set_fail" = "设置失败";
+"please_select_sex" = "请选择性别";
+"male" = "男";
+"female" = "女";
+"cancel" = "取消";
+"choose_city" = "城市选择";
+"old_password_error" = "旧密码错误";
+"get_code" = "获取验证码";
+"second_send" = "秒后重新获取";
+"please_check_code" = "手机验证码发送成功";
+"help_feedback" = "帮助与反馈";
+"help" = "帮助";
+"user_feedback" = "反馈";
+"user_feedback_content_hint" = "有什么想说的，尽管来吐槽吧~";
+"user_feedback_name_hint" = "邮箱/QQ/手机号(必填)";
+"user_feedback_name_error" = "格式错误,请输入邮箱/QQ/手机号中的一种";
+"user_feedback_spec_hint" = "填写联系方式后,客户会于您联系,更好的解决问题";
+"user_feedback_submit" = "提交";
+"user_feedback_submit_content_null" = "内容不能为空";
+"user_feedback_submit_name_null" = "请填写联系方式";
+"user_feedback_submit_ondata" = "正在提交...";
+"user_feedback_submit_success" = "非常感谢的反馈,我们会尽快的解决";
+"changepassword_old_password" = "请输入原密码";
+"changepassword_new_password" = "请输入新密码";
+"changepassword_retry_password" = "请输入确认密码";
+
+// 设置
+"setting" = "设置";
+"message_push" = "消息通知";
+"clean_cache" = "清除缓存";
+"about" = "关于健康社区";
+"logout" = "退出当前帐号";
+"log_out" = "退出登录";
+"mark" = "评分支持";
+"customer_phone" = "客服电话";
+
+// 其他
+"loading" = "正在加载...";
+"please_input_username" = "用户名不能为空";
+"please_input_password" = "密码不能为空";
+"please_input_newpassword" = "新密码不能为空";
+"retry_password_error" = "确认密码不正确";
+"please_input_cellphone" = "手机号不能为空";
+"please_input_email" = "邮箱不能为空";
+"please_input_email_error" = "请输入正确的邮箱";
+"please_input_cellphone_error" = "手机号错误,请查看后重试~";
+"please_input_cellphonesc" = "请输入验证码";
+"about_version" = "版本：";
+
+"community_title" = "社区";
+
+
+
+
+
+
+
+
+
+
+
+
+

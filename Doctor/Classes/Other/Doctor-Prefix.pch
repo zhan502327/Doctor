@@ -1,0 +1,22 @@
+//
+//  Doctor-Prefix.pch
+//  Doctor
+//
+//  Created by 范超 on 16/12/17.
+//
+//
+
+#ifndef Doctor_Prefix_pch
+#define Doctor_Prefix_pch
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "UIImage+IW.h"
+#import "UIView+Extension.h"
+#import "IWCommon.h"
+#import "IWUser.h"
+#import "IWUserTool.h"
+#endif
+
+#endif /* Doctor_Prefix_pch */

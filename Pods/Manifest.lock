@@ -1,0 +1,23 @@
+PODS:
+  - DACircularProgress (2.3.1)
+  - MJRefresh (3.1.12)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - SVProgressHUD (2.1.2)
+
+DEPENDENCIES:
+  - DACircularProgress (~> 2.3.1)
+  - MJRefresh (~> 3.1.12)
+  - SDWebImage (~> 3.8.2)
+  - SVProgressHUD (~> 2.1.2)
+
+SPEC CHECKSUMS:
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+
+PODFILE CHECKSUM: 5fe6e471dac35d2eaf44dd1277a0d0d180a33de3
+
+COCOAPODS: 1.1.1
