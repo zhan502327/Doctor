@@ -7,8 +7,13 @@
 //
 
 #import "IWHomeViewController.h"
+#import "IWHealthFileViewController.h"
 
 @interface IWHomeViewController ()
+
+@property (nonatomic, weak) UIButton *familyHealthFileBtn;
+
+
 
 @end
 
@@ -17,8 +22,45 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+
+    self.title = @"家庭医生";
+    
+    
+    [self familyHealthFileBtn];
+    
 }
 
+- (UIButton *)familyHealthFileBtn
+{
+    if (_familyHealthFileBtn == nil) {
+        UIButton *button = [[UIButton alloc] init];
+        [button setTitle:@"家庭健康档案" forState:UIControlStateNormal];
+        button.backgroundColor = [UIColor greenColor];
+        button.frame = CGRectMake(30, 200, 150, 100);
+        [button addTarget:self action:@selector(familyHealthFileBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:button];
+        
+        _familyHealthFileBtn = button;
+        
+        
+    }
+    return _familyHealthFileBtn;
+}
+
+- (void)familyHealthFileBtnClicked:(UIButton *)btn
+{
+    
+    IWHealthFileViewController *vc = [[IWHealthFileViewController alloc] init];
+    vc.title = @"健康档案";
+    [self.navigationController pushViewController:vc animated:YES];
+    
+    
+    
+    
+    
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

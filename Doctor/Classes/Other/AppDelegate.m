@@ -23,6 +23,7 @@
 
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [self.window makeKeyAndVisible];
+    self.window.backgroundColor = [UIColor whiteColor];
     
     IWUserLoginViewController *login = [[IWUserLoginViewController alloc] init];
     IWUser *user = [IWUserTool user];

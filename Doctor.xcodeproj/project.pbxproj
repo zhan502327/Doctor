@@ -234,6 +234,9 @@
 		C39E19AF1E04DA85005AC04A /* DoctorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C39E19AE1E04DA85005AC04A /* DoctorUITests.m */; };
 		C39E19D51E04DC9B005AC04A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C39E19D31E04DC9B005AC04A /* AppDelegate.m */; };
 		C39E19D61E04DC9B005AC04A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C39E19D41E04DC9B005AC04A /* main.m */; };
+		EC6289A51E066850000AA8B8 /* IWHealthFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6289A41E066850000AA8B8 /* IWHealthFileViewController.m */; };
+		EC6289A81E066BCE000AA8B8 /* IWHealthFileFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6289A71E066BCE000AA8B8 /* IWHealthFileFooterView.m */; };
+		EC6289AB1E0673F6000AA8B8 /* IWHealthFileTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6289AA1E0673F6000AA8B8 /* IWHealthFileTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -692,6 +695,12 @@
 		C39E19D41E04DC9B005AC04A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C39E19D71E04DCDF005AC04A /* Doctor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Doctor-Prefix.pch"; sourceTree = "<group>"; };
 		C39E19D81E04DDBC005AC04A /* IWCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IWCommon.h; sourceTree = "<group>"; };
+		EC6289A31E066850000AA8B8 /* IWHealthFileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWHealthFileViewController.h; sourceTree = "<group>"; };
+		EC6289A41E066850000AA8B8 /* IWHealthFileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWHealthFileViewController.m; sourceTree = "<group>"; };
+		EC6289A61E066BCE000AA8B8 /* IWHealthFileFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWHealthFileFooterView.h; sourceTree = "<group>"; };
+		EC6289A71E066BCE000AA8B8 /* IWHealthFileFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWHealthFileFooterView.m; sourceTree = "<group>"; };
+		EC6289A91E0673F6000AA8B8 /* IWHealthFileTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWHealthFileTableViewCell.h; sourceTree = "<group>"; };
+		EC6289AA1E0673F6000AA8B8 /* IWHealthFileTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWHealthFileTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1870,6 +1879,7 @@
 			isa = PBXGroup;
 			children = (
 				C383619C1E0637940029BC24 /* Tool */,
+				EC62899C1E066423000AA8B8 /* HealthFile(健康档案) */,
 				C38361901E0637730029BC24 /* MedicalInfo(医疗信息) */,
 				C38361941E0637730029BC24 /* MedicalMonitor(健康监测) */,
 				C38361981E0637730029BC24 /* MedicalReport(病历报告) */,
@@ -2171,6 +2181,43 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
+		EC62899C1E066423000AA8B8 /* HealthFile(健康档案) */ = {
+			isa = PBXGroup;
+			children = (
+				EC62899F1E06648D000AA8B8 /* Model */,
+				EC62899E1E066485000AA8B8 /* View */,
+				EC62899D1E066479000AA8B8 /* Controller */,
+			);
+			name = "HealthFile(健康档案)";
+			sourceTree = "<group>";
+		};
+		EC62899D1E066479000AA8B8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EC6289A31E066850000AA8B8 /* IWHealthFileViewController.h */,
+				EC6289A41E066850000AA8B8 /* IWHealthFileViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		EC62899E1E066485000AA8B8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC6289A61E066BCE000AA8B8 /* IWHealthFileFooterView.h */,
+				EC6289A71E066BCE000AA8B8 /* IWHealthFileFooterView.m */,
+				EC6289A91E0673F6000AA8B8 /* IWHealthFileTableViewCell.h */,
+				EC6289AA1E0673F6000AA8B8 /* IWHealthFileTableViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		EC62899F1E06648D000AA8B8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2383,6 +2430,7 @@
 				C3835F611E04EC610029BC24 /* IWHelpViewController.m in Sources */,
 				C38361401E057B8A0029BC24 /* IWCommonContactCell.m in Sources */,
 				C3835F591E04EC610029BC24 /* IWBirthdayViewController.m in Sources */,
+				EC6289A51E066850000AA8B8 /* IWHealthFileViewController.m in Sources */,
 				C3835E981E04EABD0029BC24 /* IWFindPasswordCellphoneParam.m in Sources */,
 				C383602F1E04F0E30029BC24 /* IWRelateCompanyParam.m in Sources */,
 				C38360AC1E05034C0029BC24 /* IWCompanyMenuParam.m in Sources */,
@@ -2511,6 +2559,7 @@
 				C38361431E057B8A0029BC24 /* IWContactCell.m in Sources */,
 				C38361881E058AB40029BC24 /* MJMember.m in Sources */,
 				C38360B91E0503850029BC24 /* IWNewsViewController.m in Sources */,
+				EC6289AB1E0673F6000AA8B8 /* IWHealthFileTableViewCell.m in Sources */,
 				C383615F1E057F330029BC24 /* FMDatabaseQueue.m in Sources */,
 				C3835EBB1E04EB6E0029BC24 /* NSString+IW.m in Sources */,
 				C3835ED51E04EC1E0029BC24 /* IWFindAnswerViewController.m in Sources */,
@@ -2522,6 +2571,7 @@
 				C383618E1E058AB40029BC24 /* NSObject+MJMember.m in Sources */,
 				C3835FAB1E04ECB90029BC24 /* IWGetVersionResult.m in Sources */,
 				C383615E1E057F330029BC24 /* FMDatabasePool.m in Sources */,
+				EC6289A81E066BCE000AA8B8 /* IWHealthFileFooterView.m in Sources */,
 				C3835FF11E04EEDD0029BC24 /* IWBgCell.m in Sources */,
 				C3835E9C1E04EABD0029BC24 /* IWUserLoginResult.m in Sources */,
 				C3835E9B1E04EABD0029BC24 /* IWUserLoginParam.m in Sources */,

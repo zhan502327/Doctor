@@ -42,17 +42,21 @@
         result = [NSString stringWithFormat:@"%@->%@", title, self.nTitle];
     }
     
-    NSDictionary *attrs = @{ NSForegroundColorAttributeName : IWGlobalColor };
-    NSMutableAttributedString *attrStr = [[NSMutableAttributedString alloc] initWithString:result];
-    NSRange last = [result rangeOfString:@"->" options:NSBackwardsSearch];
-    if (last.location != NSNotFound) {
-        NSRange range = NSMakeRange(0, last.location);
-        [attrStr addAttributes:attrs range:range];
+    if (result != nil) {
+        NSDictionary *attrs = @{ NSForegroundColorAttributeName : IWGlobalColor };
+        NSMutableAttributedString *attrStr = [[NSMutableAttributedString alloc] initWithString:result];
+        NSRange last = [result rangeOfString:@"->" options:NSBackwardsSearch];
+        if (last.location != NSNotFound) {
+            NSRange range = NSMakeRange(0, last.location);
+            [attrStr addAttributes:attrs range:range];
+        }
+        
+        
+        
+        label.attributedText = attrStr;
+
     }
     
-    
-    
-    label.attributedText = attrStr;
     
 }
 
