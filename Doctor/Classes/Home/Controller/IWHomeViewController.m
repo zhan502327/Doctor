@@ -18,6 +18,11 @@
 
 @interface IWHomeViewController ()
 @property (nonatomic, weak) IWScrollHeaderView *scrollhHeaderView;
+@property (weak, nonatomic) IBOutlet UIView *mainView;
+- (IBAction)loadMedicalArchives:(UIButton *)sender;
+- (IBAction)loadTrainning:(UIButton *)sender;
+- (IBAction)loadDoctorSign:(UIButton *)sender;
+- (IBAction)loadNnpList:(UIButton *)sender;
 
 @end
 
@@ -44,9 +49,22 @@
 }
 
 - (void)setupBase {
-    self.navigationItem.title = NSLocalizedString(@"", nil);
+    self.navigationItem.title = NSLocalizedString(@"family_doctor", nil);
+    
+    // 中间的view
 }
 
 
 
+- (IBAction)loadMedicalArchives:(UIButton *)sender {
+}
+
+- (IBAction)loadTrainning:(UIButton *)sender {
+}
+
+- (IBAction)loadDoctorSign:(UIButton *)sender {
+}
+
+- (IBAction)loadNnpList:(UIButton *)sender {
+}
 @end
