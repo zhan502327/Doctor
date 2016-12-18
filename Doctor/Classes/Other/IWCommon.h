@@ -220,4 +220,8 @@
 #define IWRemotionPushNotification @"IWRemotionPushNotification"
 #define IWRemotionPushCompany @"IWRemotionPushCompany"
 
+// 图片点击的通知
+#define IWHomeClickNotification @"IWHomeClickNotification"
+#define IWHomeClickNotificationBanner @"IWHomeClickNotificationBanner"
+
 #endif

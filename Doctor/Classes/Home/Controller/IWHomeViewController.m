@@ -7,8 +7,17 @@
 //
 
 #import "IWHomeViewController.h"
+#import "IWScrollHeaderView.h"
+#import "IWHomeTool.h"
+#import "IWNavigationController.h"
+#import "IWBanner.h"
+#import "IWUserTool.h"
+#import "IWUser.h"
+#import "IWCompanyTool.h"
+#import "TPKeyboardAvoidingScrollView.h"
 
 @interface IWHomeViewController ()
+@property (nonatomic, weak) IWScrollHeaderView *scrollhHeaderView;
 
 @end
 
@@ -16,22 +25,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    // 设置基本属性
+    [self setupBase];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    self.navigationController.navigationBar.hidden = NO;
+    
+    // 删除系统自动生成的UITabBarButton
+    for (UIView *child in self.tabBarController.tabBar.subviews) {
+        if ([child isKindOfClass:[UIControl class]]) {
+            [child removeFromSuperview];
+        }
+    }
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)setupBase {
+    self.navigationItem.title = NSLocalizedString(@"", nil);
 }
-*/
+
+
 
 @end

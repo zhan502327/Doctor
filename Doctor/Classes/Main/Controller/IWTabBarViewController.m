@@ -132,9 +132,9 @@
     self.contact = contact;
     
     // 2.首页
-//    IWHomeViewController *home = [[IWHomeViewController alloc] init];
-//    [self setupChildViewController:home title:NSLocalizedString(@"home", nil) imageName:@"tabbar_home" selectedImageName:@"tabbar_home_selected"];
-//    self.home = home;
+    IWHomeViewController *home = [[IWHomeViewController alloc] init];
+    [self setupChildViewController:home title:NSLocalizedString(@"home", nil) imageName:@"tabbar_home" selectedImageName:@"tabbar_home_selected"];
+    self.home = home;
     
     
     // 3.个人中心

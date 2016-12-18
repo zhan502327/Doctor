@@ -229,6 +229,16 @@
 		C383618D1E058AB40029BC24 /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = C38361831E058AB40029BC24 /* NSObject+MJKeyValue.m */; };
 		C383618E1E058AB40029BC24 /* NSObject+MJMember.m in Sources */ = {isa = PBXBuildFile; fileRef = C38361851E058AB40029BC24 /* NSObject+MJMember.m */; };
 		C383619F1E0637C20029BC24 /* IWMedicalArchivesTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C383619E1E0637C20029BC24 /* IWMedicalArchivesTool.m */; };
+		C38361A91E063E6E0029BC24 /* IWHomeBannerParam.m in Sources */ = {isa = PBXBuildFile; fileRef = C38361A21E063E6E0029BC24 /* IWHomeBannerParam.m */; };
+		C38361AA1E063E6E0029BC24 /* IWHomeBannerResult.m in Sources */ = {isa = PBXBuildFile; fileRef = C38361A41E063E6E0029BC24 /* IWHomeBannerResult.m */; };
+		C38361AB1E063E6E0029BC24 /* IWAppMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = C38361A61E063E6E0029BC24 /* IWAppMenu.m */; };
+		C38361AC1E063E6E0029BC24 /* IWBanner.m in Sources */ = {isa = PBXBuildFile; fileRef = C38361A81E063E6E0029BC24 /* IWBanner.m */; };
+		C38361B41E063E800029BC24 /* IWBannerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C38361AF1E063E800029BC24 /* IWBannerCell.m */; };
+		C38361B51E063E800029BC24 /* IWBannerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C38361B01E063E800029BC24 /* IWBannerCell.xib */; };
+		C38361B61E063E800029BC24 /* IWScrollHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C38361B21E063E800029BC24 /* IWScrollHeaderView.m */; };
+		C38361B71E063E800029BC24 /* IWScrollHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C38361B31E063E800029BC24 /* IWScrollHeaderView.xib */; };
+		C38361BD1E063EAD0029BC24 /* IWHomeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C38361BA1E063EAD0029BC24 /* IWHomeTool.m */; };
+		C38361C01E0673C30029BC24 /* IWHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C38361BF1E0673C30029BC24 /* IWHomeViewController.xib */; };
 		C39E19961E04DA85005AC04A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C39E19951E04DA85005AC04A /* Assets.xcassets */; };
 		C39E19A41E04DA85005AC04A /* DoctorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C39E19A31E04DA85005AC04A /* DoctorTests.m */; };
 		C39E19AF1E04DA85005AC04A /* DoctorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C39E19AE1E04DA85005AC04A /* DoctorUITests.m */; };
@@ -678,6 +688,23 @@
 		C38361851E058AB40029BC24 /* NSObject+MJMember.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJMember.m"; sourceTree = "<group>"; };
 		C383619D1E0637C20029BC24 /* IWMedicalArchivesTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWMedicalArchivesTool.h; sourceTree = "<group>"; };
 		C383619E1E0637C20029BC24 /* IWMedicalArchivesTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWMedicalArchivesTool.m; sourceTree = "<group>"; };
+		C38361A11E063E6E0029BC24 /* IWHomeBannerParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWHomeBannerParam.h; sourceTree = "<group>"; };
+		C38361A21E063E6E0029BC24 /* IWHomeBannerParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWHomeBannerParam.m; sourceTree = "<group>"; };
+		C38361A31E063E6E0029BC24 /* IWHomeBannerResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWHomeBannerResult.h; sourceTree = "<group>"; };
+		C38361A41E063E6E0029BC24 /* IWHomeBannerResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWHomeBannerResult.m; sourceTree = "<group>"; };
+		C38361A51E063E6E0029BC24 /* IWAppMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWAppMenu.h; sourceTree = "<group>"; };
+		C38361A61E063E6E0029BC24 /* IWAppMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWAppMenu.m; sourceTree = "<group>"; };
+		C38361A71E063E6E0029BC24 /* IWBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWBanner.h; sourceTree = "<group>"; };
+		C38361A81E063E6E0029BC24 /* IWBanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWBanner.m; sourceTree = "<group>"; };
+		C38361AE1E063E800029BC24 /* IWBannerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWBannerCell.h; sourceTree = "<group>"; };
+		C38361AF1E063E800029BC24 /* IWBannerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWBannerCell.m; sourceTree = "<group>"; };
+		C38361B01E063E800029BC24 /* IWBannerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IWBannerCell.xib; sourceTree = "<group>"; };
+		C38361B11E063E800029BC24 /* IWScrollHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWScrollHeaderView.h; sourceTree = "<group>"; };
+		C38361B21E063E800029BC24 /* IWScrollHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWScrollHeaderView.m; sourceTree = "<group>"; };
+		C38361B31E063E800029BC24 /* IWScrollHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IWScrollHeaderView.xib; sourceTree = "<group>"; };
+		C38361B91E063EAD0029BC24 /* IWHomeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWHomeTool.h; sourceTree = "<group>"; };
+		C38361BA1E063EAD0029BC24 /* IWHomeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWHomeTool.m; sourceTree = "<group>"; };
+		C38361BF1E0673C30029BC24 /* IWHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IWHomeViewController.xib; sourceTree = "<group>"; };
 		C39E19861E04DA85005AC04A /* Doctor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Doctor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C39E19951E04DA85005AC04A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C39E199A1E04DA85005AC04A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -1979,6 +2006,39 @@
 			path = Tool;
 			sourceTree = "<group>";
 		};
+		C38361A01E063E6E0029BC24 /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				C38361A11E063E6E0029BC24 /* IWHomeBannerParam.h */,
+				C38361A21E063E6E0029BC24 /* IWHomeBannerParam.m */,
+				C38361A31E063E6E0029BC24 /* IWHomeBannerResult.h */,
+				C38361A41E063E6E0029BC24 /* IWHomeBannerResult.m */,
+			);
+			path = Banner;
+			sourceTree = "<group>";
+		};
+		C38361AD1E063E800029BC24 /* ScrollHeader */ = {
+			isa = PBXGroup;
+			children = (
+				C38361AE1E063E800029BC24 /* IWBannerCell.h */,
+				C38361AF1E063E800029BC24 /* IWBannerCell.m */,
+				C38361B01E063E800029BC24 /* IWBannerCell.xib */,
+				C38361B11E063E800029BC24 /* IWScrollHeaderView.h */,
+				C38361B21E063E800029BC24 /* IWScrollHeaderView.m */,
+				C38361B31E063E800029BC24 /* IWScrollHeaderView.xib */,
+			);
+			path = ScrollHeader;
+			sourceTree = "<group>";
+		};
+		C38361B81E063EAD0029BC24 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				C38361B91E063EAD0029BC24 /* IWHomeTool.h */,
+				C38361BA1E063EAD0029BC24 /* IWHomeTool.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
 		C39E197D1E04DA85005AC04A = {
 			isa = PBXGroup;
 			children = (
@@ -2088,6 +2148,7 @@
 		C39E19C91E04DC9B005AC04A /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				C38361B81E063EAD0029BC24 /* Tool */,
 				C39E19CA1E04DC9B005AC04A /* Controller */,
 				C39E19CB1E04DC9B005AC04A /* Model */,
 				C39E19CC1E04DC9B005AC04A /* View */,
@@ -2100,6 +2161,7 @@
 			children = (
 				C38360F11E051F180029BC24 /* IWHomeViewController.h */,
 				C38360F21E051F180029BC24 /* IWHomeViewController.m */,
+				C38361BF1E0673C30029BC24 /* IWHomeViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -2107,6 +2169,11 @@
 		C39E19CB1E04DC9B005AC04A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C38361A01E063E6E0029BC24 /* Banner */,
+				C38361A51E063E6E0029BC24 /* IWAppMenu.h */,
+				C38361A61E063E6E0029BC24 /* IWAppMenu.m */,
+				C38361A71E063E6E0029BC24 /* IWBanner.h */,
+				C38361A81E063E6E0029BC24 /* IWBanner.m */,
 				C383614A1E057D710029BC24 /* IWNews.h */,
 				C383614B1E057D710029BC24 /* IWNews.m */,
 			);
@@ -2116,6 +2183,7 @@
 		C39E19CC1E04DC9B005AC04A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C38361AD1E063E800029BC24 /* ScrollHeader */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2278,12 +2346,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C38361441E057B8A0029BC24 /* IWContactCell.xib in Resources */,
+				C38361C01E0673C30029BC24 /* IWHomeViewController.xib in Resources */,
 				C3835ED81E04EC1E0029BC24 /* IWFindCellPhoneViewController.xib in Resources */,
 				C38360CC1E0509760029BC24 /* InfoPlist.strings in Resources */,
 				C38360E91E051DB50029BC24 /* btn_close_normal.png in Resources */,
 				C3835F811E04EC610029BC24 /* IWFanCompanySettingViewCell.xib in Resources */,
 				C3835FB51E04ED090029BC24 /* MBProgressHUD.bundle in Resources */,
 				C39E19961E04DA85005AC04A /* Assets.xcassets in Resources */,
+				C38361B51E063E800029BC24 /* IWBannerCell.xib in Resources */,
 				C3835EDA1E04EC1E0029BC24 /* IWFindEmailViewController.xib in Resources */,
 				C3835F5A1E04EC610029BC24 /* IWBirthdayViewController.xib in Resources */,
 				C3835F631E04EC610029BC24 /* IWUserFeedbackViewController.xib in Resources */,
@@ -2303,6 +2373,7 @@
 				C3835F5C1E04EC610029BC24 /* IWCellPhoneViewController.xib in Resources */,
 				C38360981E0502F40029BC24 /* IWFeedbackDetailViewController.xib in Resources */,
 				C3835F671E04EC610029BC24 /* IWPasswordViewController.xib in Resources */,
+				C38361B71E063E800029BC24 /* IWScrollHeaderView.xib in Resources */,
 				C38360EC1E051DB50029BC24 /* btn_close_selected@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2380,6 +2451,7 @@
 				C38361001E0579C90029BC24 /* IWDepartmentPeopleViewController.m in Sources */,
 				C383609C1E0502F40029BC24 /* IWFeedbackListResult.m in Sources */,
 				C3835EAA1E04EAF20029BC24 /* IWToast.m in Sources */,
+				C38361BD1E063EAD0029BC24 /* IWHomeTool.m in Sources */,
 				C3835F611E04EC610029BC24 /* IWHelpViewController.m in Sources */,
 				C38361401E057B8A0029BC24 /* IWCommonContactCell.m in Sources */,
 				C3835F591E04EC610029BC24 /* IWBirthdayViewController.m in Sources */,
@@ -2426,6 +2498,7 @@
 				C38360401E05003E0029BC24 /* IWCompanyDetailResult.m in Sources */,
 				C38360191E04EFB30029BC24 /* AFHTTPSessionManager.m in Sources */,
 				C383601B1E04EFB30029BC24 /* AFSecurityPolicy.m in Sources */,
+				C38361B41E063E800029BC24 /* IWBannerCell.m in Sources */,
 				C3835F551E04EC610029BC24 /* IWAboutViewController.m in Sources */,
 				C3835EA31E04EABD0029BC24 /* IWUserInfoResult.m in Sources */,
 				C383616E1E05854C0029BC24 /* IWHospital.m in Sources */,
@@ -2461,6 +2534,7 @@
 				C3835FDE1E04EE6E0029BC24 /* IWCompanyFanResult.m in Sources */,
 				C3835ED91E04EC1E0029BC24 /* IWFindEmailViewController.m in Sources */,
 				C3835F7A1E04EC610029BC24 /* IWChangePasswordParam.m in Sources */,
+				C38361A91E063E6E0029BC24 /* IWHomeBannerParam.m in Sources */,
 				C3835FFE1E04EF0F0029BC24 /* TPKeyboardAvoidingTableView.m in Sources */,
 				C38360021E04EF5E0029BC24 /* IWBadgeButton.m in Sources */,
 				C3835EA01E04EABD0029BC24 /* IWRegisterScResult.m in Sources */,
@@ -2484,6 +2558,7 @@
 				C38361341E057B890029BC24 /* IWCommonContact.m in Sources */,
 				C3835FDF1E04EE6E0029BC24 /* IWCompanyUnReadParam.m in Sources */,
 				C3835EBD1E04EB6E0029BC24 /* UIBarButtonItem+Extension.m in Sources */,
+				C38361B61E063E800029BC24 /* IWScrollHeaderView.m in Sources */,
 				C38361421E057B8A0029BC24 /* IWContactButton.m in Sources */,
 				C38360DB1E051D020029BC24 /* IWCommonTool.m in Sources */,
 				C383601D1E04EFB30029BC24 /* AFURLRequestSerialization.m in Sources */,
@@ -2498,6 +2573,7 @@
 				C3835FFD1E04EF0F0029BC24 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				C3835ED71E04EC1E0029BC24 /* IWFindCellPhoneViewController.m in Sources */,
 				C3835E9A1E04EABD0029BC24 /* IWFindPasswordResult.m in Sources */,
+				C38361AA1E063E6E0029BC24 /* IWHomeBannerResult.m in Sources */,
 				C38361411E057B8A0029BC24 /* IWContactAlertView.m in Sources */,
 				C3835FE91E04EE970029BC24 /* IWFanCompany.m in Sources */,
 				C38361651E0584220029BC24 /* IWGetCommunityParam.m in Sources */,
@@ -2559,7 +2635,9 @@
 				C3835F7C1E04EC610029BC24 /* IWAddressTool.m in Sources */,
 				C3835FA51E04ECB90029BC24 /* IWSettingCheckItem.m in Sources */,
 				C383601A1E04EFB30029BC24 /* AFNetworkReachabilityManager.m in Sources */,
+				C38361AB1E063E6E0029BC24 /* IWAppMenu.m in Sources */,
 				C38361491E057B8A0029BC24 /* IWSearchPeopleCell.m in Sources */,
+				C38361AC1E063E6E0029BC24 /* IWBanner.m in Sources */,
 				C383615C1E057F330029BC24 /* FMDatabase.m in Sources */,
 				C3835FEA1E04EE970029BC24 /* IWUnRead.m in Sources */,
 				C3835EA91E04EAF20029BC24 /* IWHttpTool.m in Sources */,

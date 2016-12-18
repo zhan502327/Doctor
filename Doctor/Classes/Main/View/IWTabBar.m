@@ -96,7 +96,7 @@
     
     // 按钮的frame数据
     CGFloat buttonH = self.frame.size.height;
-    CGFloat buttonW = self.frame.size.width / (self.tabBarButtons.count + 1);
+    CGFloat buttonW = self.frame.size.width / (self.tabBarButtons.count);
     CGFloat buttonY = 0;
     
     for (int index = 0; index < self.tabBarButtons.count; index++) {
@@ -104,24 +104,21 @@
         IWTabBarButton *button = self.tabBarButtons[index];
         // 2.设置按钮的frame
         CGFloat buttonX = index * buttonW;
-        if (index >= 1) { // 右边的UITabBarButton
-            buttonX += buttonW;
-        }
+//        if (index >= 1) { // 右边的UITabBarButton
+//            buttonX += buttonW;
+//        }
         button.frame = CGRectMake(buttonX, buttonY, buttonW, buttonH);
         
         // 3.绑定tag
          button.tag = index;
-        if (index >= 1) {
-             button.tag = index++;
-        }
        
     }
     
-    /**** 设置中间的发布按钮的frame ****/
-    self.homeButton.width = buttonW;
-    self.homeButton.height = buttonH;
-    self.homeButton.centerX = self.width * 0.5;
-    self.homeButton.centerY = self.height * 0.2;
+//    /**** 设置中间的发布按钮的frame ****/
+//    self.homeButton.width = buttonW;
+//    self.homeButton.height = buttonH;
+//    self.homeButton.centerX = self.width * 0.5;
+//    self.homeButton.centerY = self.height * 0.2;
 }
 
 @end
