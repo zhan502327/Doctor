@@ -16,6 +16,23 @@
 @property (nonatomic, weak) UIImageView *sexImageView;
 @property (nonatomic, weak) UIImageView *arrowImageView;
 
+@property (nonatomic, weak) UIButton *firstButton;
+@property (nonatomic, weak) UIButton *secondButton;
+@property (nonatomic, weak) UIButton *thirdButton;
+
+@property (nonatomic, weak) UIView *leftLineView;
+@property (nonatomic, weak) UIView *rightLineView;
+@property (nonatomic, weak) UIView *lineView;
+
+@property (nonatomic, copy) void(^firstBtnBlock)();
+@property (nonatomic, copy) void(^secondBtnBlock)();
+@property (nonatomic, copy) void(^thirdBtnBlock)();
+
+
+
++ (instancetype)normalTableViewCellWithTableView:(UITableView *)tableView;
+
+
 
 
 

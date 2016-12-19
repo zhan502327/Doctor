@@ -7,7 +7,12 @@
 //
 
 #import "IWHealthFileViewController.h"
-#import "IWHealthFileFooterView.h"
+#import "IWHealthFileTableViewCell.h"
+#import "IWMedicalInfoViewController.h"
+#import "IWMedicalReportViewController.h"
+#import "IWMedicalMonitorViewController.h"
+#import "IWProfileInfoViewController.h"
+
 
 @interface IWHealthFileViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -32,12 +37,19 @@
     
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.navigationItem.title = NSLocalizedString(@"健康档案",nil);
+}
+
 - (UITableView *)healthFileTabelView
 {
     if (_healthFileTabelView == nil) {
-        UITableView *tabelView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+        UITableView *tabelView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 64) style:UITableViewStylePlain];
         tabelView.delegate = self;
         tabelView.dataSource = self;
+        tabelView.separatorStyle = UITableViewCellSeparatorStyleNone;
         [self.view addSubview:tabelView];
         
         _healthFileTabelView = tabelView;
@@ -52,11 +64,11 @@
 
 #pragma mark - tableview的代理方法
 
--(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return 22;
-}
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 11;
+}
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return 1;
@@ -65,34 +77,63 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *cellID =
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#(nonnull NSString *)#>]
+    IWHealthFileTableViewCell *cell = [IWHealthFileTableViewCell normalTableViewCellWithTableView:tableView];
     
+    [cell setFirstBtnBlock:^{
+       
+        IWMedicalMonitorViewController *vc = [[IWMedicalMonitorViewController alloc] init];
+        vc.view.backgroundColor = [UIColor whiteColor];
+
+        [self.navigationController pushViewController:vc animated:YES];
+    }];
     
+    [cell setSecondBtnBlock:^{
+        IWMedicalReportViewController *vc = [[IWMedicalReportViewController alloc] init];
+        vc.view.backgroundColor = [UIColor whiteColor];
+
+        [self.navigationController pushViewController:vc animated:YES];
+        
+    }];
+    
+    [cell setThirdBtnBlock:^{
+       
+        IWMedicalInfoViewController *vc = [[IWMedicalInfoViewController alloc] init];
+        vc.view.backgroundColor = [UIColor whiteColor];
+
+        [self.navigationController pushViewController:vc animated:YES];
+    }];
+    
+    return cell;
     
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 80;
+    return 120;
 }
 
-//-(UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
-//    
-//    IWHealthFileFooterView *footerView = [[IWHealthFileFooterView alloc] init];
-//    footerView.frame = CGRectMake(0, 0, self.view.frame.size.width, 50);
-//    return footerView;
-//    
-//    
-//    
-//    
-//}
-//
-//- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
-//{
-//    return 50;
-//}
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
+{
+    UIView *view = [[UIView alloc] init];
+    view.backgroundColor = [UIColor grayColor];
+    view.frame = CGRectMake(0, 0, self.view.frame.size.width, 10);
+    
+    return view;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+    return 10;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    IWProfileInfoViewController *vc = [[IWProfileInfoViewController alloc] init];
+    vc.view.backgroundColor = [UIColor whiteColor];
+    [self.navigationController pushViewController:vc animated:YES];
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

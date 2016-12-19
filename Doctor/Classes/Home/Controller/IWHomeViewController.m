@@ -16,6 +16,7 @@
 #import "IWUser.h"
 #import "IWCompanyTool.h"
 #import "TPKeyboardAvoidingScrollView.h"
+#import "Masonry.h"
 
 @interface IWHomeViewController ()
 @property (nonatomic, weak) IWScrollHeaderView *scrollhHeaderView;
@@ -33,8 +34,10 @@
     // Do any additional setup after loading the view.
     
 
-    self.title = @"家庭医生";
+//    self.title = @"";
     
+    // 设置基本属性
+    [self setupBase];
     
     [self familyHealthFileBtn];
     
@@ -61,7 +64,6 @@
 {
     
     IWHealthFileViewController *vc = [[IWHealthFileViewController alloc] init];
-    vc.title = @"健康档案";
     [self.navigationController pushViewController:vc animated:YES];
     
     
@@ -74,8 +76,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
     
-    // 设置基本属性
-    [self setupBase];
+
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -89,10 +90,11 @@
             [child removeFromSuperview];
         }
     }
+    [self setupBase];
 }
 
 - (void)setupBase {
-    self.navigationItem.title = NSLocalizedString(@"", nil);
+    self.navigationItem.title = NSLocalizedString(@"家庭医生", nil);
 }
 
 
