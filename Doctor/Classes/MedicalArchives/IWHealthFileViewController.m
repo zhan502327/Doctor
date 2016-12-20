@@ -79,20 +79,21 @@
 {
     
     IWHealthFileTableViewCell *cell = [IWHealthFileTableViewCell normalTableViewCellWithTableView:tableView];
-    
+    __weak typeof(self) ws = self;
+
     [cell setFirstBtnBlock:^{
        
         IWMedicalMonitorViewController *vc = [[IWMedicalMonitorViewController alloc] init];
         vc.view.backgroundColor = [UIColor whiteColor];
 
-        [self.navigationController pushViewController:vc animated:YES];
+        [ws.navigationController pushViewController:vc animated:YES];
     }];
     
     [cell setSecondBtnBlock:^{
         IWMedicalReportViewController *vc = [[IWMedicalReportViewController alloc] init];
         vc.view.backgroundColor = [UIColor whiteColor];
 
-        [self.navigationController pushViewController:vc animated:YES];
+        [ws.navigationController pushViewController:vc animated:YES];
         
     }];
     
@@ -100,8 +101,9 @@
        
         IWMedicalInfoViewController *vc = [[IWMedicalInfoViewController alloc] init];
         vc.view.backgroundColor = [UIColor whiteColor];
+        
 
-        [self.navigationController pushViewController:vc animated:YES];
+        [ws.navigationController pushViewController:vc animated:YES];
     }];
     
     return cell;

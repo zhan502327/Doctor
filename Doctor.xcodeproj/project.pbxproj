@@ -250,6 +250,17 @@
 		EC6289B11E06EBEF000AA8B8 /* IWMedicalReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6289B01E06EBEF000AA8B8 /* IWMedicalReportViewController.m */; };
 		EC6289B41E06EC03000AA8B8 /* IWMedicalInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6289B31E06EC03000AA8B8 /* IWMedicalInfoViewController.m */; };
 		EC6289BB1E06F046000AA8B8 /* IWProfileInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6289BA1E06F046000AA8B8 /* IWProfileInfoViewController.m */; };
+		EC6289BE1E077BDD000AA8B8 /* IWProfileIconTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6289BD1E077BDD000AA8B8 /* IWProfileIconTableViewCell.m */; };
+		EC6289C11E077BF1000AA8B8 /* IWProfileNormalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6289C01E077BF1000AA8B8 /* IWProfileNormalTableViewCell.m */; };
+		EC6289C41E077C03000AA8B8 /* IWProfileSaveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6289C31E077C03000AA8B8 /* IWProfileSaveTableViewCell.m */; };
+		EC6289C71E078964000AA8B8 /* IWProfileArowTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6289C61E078964000AA8B8 /* IWProfileArowTableViewCell.m */; };
+		EC6289CA1E07897E000AA8B8 /* IWProfileTextFieldTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6289C91E07897E000AA8B8 /* IWProfileTextFieldTableViewCell.m */; };
+		EC6289CD1E07C9F7000AA8B8 /* IWInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6289CC1E07C9F7000AA8B8 /* IWInfoTableViewCell.m */; };
+		EC6289D01E080BC2000AA8B8 /* IWMonitorFirstTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6289CF1E080BC2000AA8B8 /* IWMonitorFirstTableViewCell.m */; };
+		EC6289D31E080BD8000AA8B8 /* IWMonitorSecondTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6289D21E080BD8000AA8B8 /* IWMonitorSecondTableViewCell.m */; };
+		EC6289D81E08343C000AA8B8 /* IWProfileSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6289D71E08343C000AA8B8 /* IWProfileSecondViewController.m */; };
+		EC6289DE1E08DF6C000AA8B8 /* IMJIETagFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6289DB1E08DF6C000AA8B8 /* IMJIETagFrame.m */; };
+		EC6289DF1E08DF6C000AA8B8 /* IMJIETagView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6289DD1E08DF6C000AA8B8 /* IMJIETagView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -737,6 +748,28 @@
 		EC6289B31E06EC03000AA8B8 /* IWMedicalInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IWMedicalInfoViewController.m; path = Doctor/Classes/MedicalArchives/IWMedicalInfoViewController.m; sourceTree = SOURCE_ROOT; };
 		EC6289B91E06F046000AA8B8 /* IWProfileInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWProfileInfoViewController.h; sourceTree = "<group>"; };
 		EC6289BA1E06F046000AA8B8 /* IWProfileInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWProfileInfoViewController.m; sourceTree = "<group>"; };
+		EC6289BC1E077BDD000AA8B8 /* IWProfileIconTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWProfileIconTableViewCell.h; sourceTree = "<group>"; };
+		EC6289BD1E077BDD000AA8B8 /* IWProfileIconTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWProfileIconTableViewCell.m; sourceTree = "<group>"; };
+		EC6289BF1E077BF1000AA8B8 /* IWProfileNormalTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWProfileNormalTableViewCell.h; sourceTree = "<group>"; };
+		EC6289C01E077BF1000AA8B8 /* IWProfileNormalTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWProfileNormalTableViewCell.m; sourceTree = "<group>"; };
+		EC6289C21E077C03000AA8B8 /* IWProfileSaveTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWProfileSaveTableViewCell.h; sourceTree = "<group>"; };
+		EC6289C31E077C03000AA8B8 /* IWProfileSaveTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWProfileSaveTableViewCell.m; sourceTree = "<group>"; };
+		EC6289C51E078964000AA8B8 /* IWProfileArowTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWProfileArowTableViewCell.h; sourceTree = "<group>"; };
+		EC6289C61E078964000AA8B8 /* IWProfileArowTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWProfileArowTableViewCell.m; sourceTree = "<group>"; };
+		EC6289C81E07897E000AA8B8 /* IWProfileTextFieldTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWProfileTextFieldTableViewCell.h; sourceTree = "<group>"; };
+		EC6289C91E07897E000AA8B8 /* IWProfileTextFieldTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWProfileTextFieldTableViewCell.m; sourceTree = "<group>"; };
+		EC6289CB1E07C9F7000AA8B8 /* IWInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IWInfoTableViewCell.h; path = Doctor/Classes/MedicalArchives/IWInfoTableViewCell.h; sourceTree = SOURCE_ROOT; };
+		EC6289CC1E07C9F7000AA8B8 /* IWInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IWInfoTableViewCell.m; path = Doctor/Classes/MedicalArchives/IWInfoTableViewCell.m; sourceTree = SOURCE_ROOT; };
+		EC6289CE1E080BC2000AA8B8 /* IWMonitorFirstTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IWMonitorFirstTableViewCell.h; path = Doctor/Classes/MedicalArchives/IWMonitorFirstTableViewCell.h; sourceTree = SOURCE_ROOT; };
+		EC6289CF1E080BC2000AA8B8 /* IWMonitorFirstTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IWMonitorFirstTableViewCell.m; path = Doctor/Classes/MedicalArchives/IWMonitorFirstTableViewCell.m; sourceTree = SOURCE_ROOT; };
+		EC6289D11E080BD8000AA8B8 /* IWMonitorSecondTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IWMonitorSecondTableViewCell.h; path = Doctor/Classes/MedicalArchives/IWMonitorSecondTableViewCell.h; sourceTree = SOURCE_ROOT; };
+		EC6289D21E080BD8000AA8B8 /* IWMonitorSecondTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IWMonitorSecondTableViewCell.m; path = Doctor/Classes/MedicalArchives/IWMonitorSecondTableViewCell.m; sourceTree = SOURCE_ROOT; };
+		EC6289D61E08343C000AA8B8 /* IWProfileSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWProfileSecondViewController.h; sourceTree = "<group>"; };
+		EC6289D71E08343C000AA8B8 /* IWProfileSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWProfileSecondViewController.m; sourceTree = "<group>"; };
+		EC6289DA1E08DF6C000AA8B8 /* IMJIETagFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMJIETagFrame.h; sourceTree = "<group>"; };
+		EC6289DB1E08DF6C000AA8B8 /* IMJIETagFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMJIETagFrame.m; sourceTree = "<group>"; };
+		EC6289DC1E08DF6C000AA8B8 /* IMJIETagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMJIETagView.h; sourceTree = "<group>"; };
+		EC6289DD1E08DF6C000AA8B8 /* IMJIETagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMJIETagView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1953,6 +1986,8 @@
 		C38361931E0637730029BC24 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EC6289CB1E07C9F7000AA8B8 /* IWInfoTableViewCell.h */,
+				EC6289CC1E07C9F7000AA8B8 /* IWInfoTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1986,6 +2021,10 @@
 		C38361971E0637730029BC24 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EC6289CE1E080BC2000AA8B8 /* IWMonitorFirstTableViewCell.h */,
+				EC6289CF1E080BC2000AA8B8 /* IWMonitorFirstTableViewCell.m */,
+				EC6289D11E080BD8000AA8B8 /* IWMonitorSecondTableViewCell.h */,
+				EC6289D21E080BD8000AA8B8 /* IWMonitorSecondTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2026,6 +2065,7 @@
 		C383619C1E0637940029BC24 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				EC6289D91E08DF1D000AA8B8 /* Lib */,
 				C383619D1E0637C20029BC24 /* IWMedicalArchivesTool.h */,
 				C383619E1E0637C20029BC24 /* IWMedicalArchivesTool.m */,
 			);
@@ -2315,6 +2355,8 @@
 			children = (
 				EC6289B91E06F046000AA8B8 /* IWProfileInfoViewController.h */,
 				EC6289BA1E06F046000AA8B8 /* IWProfileInfoViewController.m */,
+				EC6289D61E08343C000AA8B8 /* IWProfileSecondViewController.h */,
+				EC6289D71E08343C000AA8B8 /* IWProfileSecondViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -2322,6 +2364,16 @@
 		EC6289B71E06F025000AA8B8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EC6289BC1E077BDD000AA8B8 /* IWProfileIconTableViewCell.h */,
+				EC6289BD1E077BDD000AA8B8 /* IWProfileIconTableViewCell.m */,
+				EC6289BF1E077BF1000AA8B8 /* IWProfileNormalTableViewCell.h */,
+				EC6289C01E077BF1000AA8B8 /* IWProfileNormalTableViewCell.m */,
+				EC6289C21E077C03000AA8B8 /* IWProfileSaveTableViewCell.h */,
+				EC6289C31E077C03000AA8B8 /* IWProfileSaveTableViewCell.m */,
+				EC6289C51E078964000AA8B8 /* IWProfileArowTableViewCell.h */,
+				EC6289C61E078964000AA8B8 /* IWProfileArowTableViewCell.m */,
+				EC6289C81E07897E000AA8B8 /* IWProfileTextFieldTableViewCell.h */,
+				EC6289C91E07897E000AA8B8 /* IWProfileTextFieldTableViewCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -2331,6 +2383,17 @@
 			children = (
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		EC6289D91E08DF1D000AA8B8 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				EC6289DA1E08DF6C000AA8B8 /* IMJIETagFrame.h */,
+				EC6289DB1E08DF6C000AA8B8 /* IMJIETagFrame.m */,
+				EC6289DC1E08DF6C000AA8B8 /* IMJIETagView.h */,
+				EC6289DD1E08DF6C000AA8B8 /* IMJIETagView.m */,
+			);
+			name = Lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2402,6 +2465,7 @@
 				TargetAttributes = {
 					C39E19851E04DA85005AC04A = {
 						CreatedOnToolsVersion = 7.2.1;
+						ProvisioningStyle = Automatic;
 					};
 					C39E199E1E04DA85005AC04A = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -2567,6 +2631,7 @@
 				C383613F1E057B8A0029BC24 /* NSStack.m in Sources */,
 				C3835E9D1E04EABD0029BC24 /* IWRegisterParam.m in Sources */,
 				C3835F6F1E04EC610029BC24 /* IWUserFeedbackResult.m in Sources */,
+				EC6289C41E077C03000AA8B8 /* IWProfileSaveTableViewCell.m in Sources */,
 				C383619F1E0637C20029BC24 /* IWMedicalArchivesTool.m in Sources */,
 				C38360BB1E0503850029BC24 /* IWNewsResult.m in Sources */,
 				C3835F831E04EC610029BC24 /* IWMeHeaderView.m in Sources */,
@@ -2574,6 +2639,7 @@
 				C3835FAC1E04ECB90029BC24 /* IWUpdate.m in Sources */,
 				C38361391E057B8A0029BC24 /* IWContactLevelResult.m in Sources */,
 				C3835FA31E04ECB90029BC24 /* IWSettingGroup.m in Sources */,
+				EC6289D31E080BD8000AA8B8 /* IWMonitorSecondTableViewCell.m in Sources */,
 				C38360FD1E0579B20029BC24 /* IWDepartmentViewController.m in Sources */,
 				C3835F581E04EC610029BC24 /* IWAddressViewController.m in Sources */,
 				C3835F771E04EC610029BC24 /* IWNotificationKnownParam.m in Sources */,
@@ -2630,6 +2696,7 @@
 				C3835ED91E04EC1E0029BC24 /* IWFindEmailViewController.m in Sources */,
 				C3835F7A1E04EC610029BC24 /* IWChangePasswordParam.m in Sources */,
 				C38361A91E063E6E0029BC24 /* IWHomeBannerParam.m in Sources */,
+				EC6289CD1E07C9F7000AA8B8 /* IWInfoTableViewCell.m in Sources */,
 				C3835FFE1E04EF0F0029BC24 /* TPKeyboardAvoidingTableView.m in Sources */,
 				C38360021E04EF5E0029BC24 /* IWBadgeButton.m in Sources */,
 				C3835EA01E04EABD0029BC24 /* IWRegisterScResult.m in Sources */,
@@ -2672,6 +2739,7 @@
 				C3835E9A1E04EABD0029BC24 /* IWFindPasswordResult.m in Sources */,
 				C38361AA1E063E6E0029BC24 /* IWHomeBannerResult.m in Sources */,
 				C38361411E057B8A0029BC24 /* IWContactAlertView.m in Sources */,
+				EC6289DE1E08DF6C000AA8B8 /* IMJIETagFrame.m in Sources */,
 				C3835FE91E04EE970029BC24 /* IWFanCompany.m in Sources */,
 				C38361651E0584220029BC24 /* IWGetCommunityParam.m in Sources */,
 				C38361891E058AB40029BC24 /* MJMethod.m in Sources */,
@@ -2679,6 +2747,7 @@
 				C3835EBF1E04EB6E0029BC24 /* UIImage+IW.m in Sources */,
 				C3835F741E04EC610029BC24 /* IWHelpResult.m in Sources */,
 				C3835F5E1E04EC610029BC24 /* IWEmailViewController.m in Sources */,
+				EC6289DF1E08DF6C000AA8B8 /* IMJIETagView.m in Sources */,
 				C38360961E0502F40029BC24 /* IWPictureDetailViewController.m in Sources */,
 				C38360AD1E05034C0029BC24 /* IWCompanyMenuResult.m in Sources */,
 				C38361431E057B8A0029BC24 /* IWContactCell.m in Sources */,
@@ -2695,6 +2764,7 @@
 				C3835FA21E04ECB90029BC24 /* IWSettingCheckGroup.m in Sources */,
 				C383618E1E058AB40029BC24 /* NSObject+MJMember.m in Sources */,
 				C3835FAB1E04ECB90029BC24 /* IWGetVersionResult.m in Sources */,
+				EC6289C11E077BF1000AA8B8 /* IWProfileNormalTableViewCell.m in Sources */,
 				EC6289AE1E06EBBC000AA8B8 /* IWMedicalMonitorViewController.m in Sources */,
 				C383615E1E057F330029BC24 /* FMDatabasePool.m in Sources */,
 				C3835FF11E04EEDD0029BC24 /* IWBgCell.m in Sources */,
@@ -2734,7 +2804,9 @@
 				C3835F7C1E04EC610029BC24 /* IWAddressTool.m in Sources */,
 				C3835FA51E04ECB90029BC24 /* IWSettingCheckItem.m in Sources */,
 				C383601A1E04EFB30029BC24 /* AFNetworkReachabilityManager.m in Sources */,
+				EC6289CA1E07897E000AA8B8 /* IWProfileTextFieldTableViewCell.m in Sources */,
 				C38361AB1E063E6E0029BC24 /* IWAppMenu.m in Sources */,
+				EC6289BE1E077BDD000AA8B8 /* IWProfileIconTableViewCell.m in Sources */,
 				C38361491E057B8A0029BC24 /* IWSearchPeopleCell.m in Sources */,
 				EC6289B41E06EC03000AA8B8 /* IWMedicalInfoViewController.m in Sources */,
 				C38361AC1E063E6E0029BC24 /* IWBanner.m in Sources */,
@@ -2742,13 +2814,16 @@
 				C3835FEA1E04EE970029BC24 /* IWUnRead.m in Sources */,
 				C3835EA91E04EAF20029BC24 /* IWHttpTool.m in Sources */,
 				C38360411E05003E0029BC24 /* IWDetailExtendInfo.m in Sources */,
+				EC6289C71E078964000AA8B8 /* IWProfileArowTableViewCell.m in Sources */,
 				C3835EDC1E04EC1E0029BC24 /* IWUserInfoViewController.m in Sources */,
 				C38361481E057B8A0029BC24 /* IWPeopleCell.m in Sources */,
 				C3835F621E04EC610029BC24 /* IWUserFeedbackViewController.m in Sources */,
 				C38361381E057B8A0029BC24 /* IWContactLevelParam.m in Sources */,
+				EC6289D01E080BC2000AA8B8 /* IWMonitorFirstTableViewCell.m in Sources */,
 				C38360AB1E05034C0029BC24 /* IWBaseCompanyResult.m in Sources */,
 				C383601E1E04EFB30029BC24 /* AFURLResponseSerialization.m in Sources */,
 				C38360421E05003E0029BC24 /* IWHomeDetailParam.m in Sources */,
+				EC6289D81E08343C000AA8B8 /* IWProfileSecondViewController.m in Sources */,
 				C38360F01E051ED30029BC24 /* IWContactViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2892,9 +2967,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "Doctor/Classes/Other/Doctor-Prefix.pch";
 				INFOPLIST_FILE = Doctor/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.travorapp.doctor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2907,9 +2984,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "Doctor/Classes/Other/Doctor-Prefix.pch";
 				INFOPLIST_FILE = Doctor/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.travorapp.doctor;
 				PRODUCT_NAME = "$(TARGET_NAME)";

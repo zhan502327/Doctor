@@ -165,7 +165,7 @@
     if (_thirdButton == nil) {
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
         button.backgroundColor=[UIColor clearColor];
-        button.tag=0;
+        button.tag=2;
         [button addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
         [button setTitle:@"医疗信息" forState:UIControlStateNormal];
       
