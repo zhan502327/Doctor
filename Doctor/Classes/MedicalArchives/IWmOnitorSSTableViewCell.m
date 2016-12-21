@@ -1,19 +1,20 @@
 //
-//  IWMonitorFirstTableViewCell.m
+//  IWmOnitorSSTableViewCell.m
 //  Doctor
 //
-//  Created by 深水区 on 16/12/19.
+//  Created by 深水区 on 16/12/21.
 //
 //
 
-#import "IWMonitorFirstTableViewCell.h"
+#import "IWmOnitorSSTableViewCell.h"
 
-@implementation IWMonitorFirstTableViewCell
+@implementation IWmOnitorSSTableViewCell
+
 
 + (instancetype)normalTableViewCellWithTableView:(UITableView *)tableView{
     NSString *className = NSStringFromClass([self class]);
     [tableView registerClass:[self class] forCellReuseIdentifier:className];
-    IWMonitorFirstTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:className];
+    IWmOnitorSSTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:className];
     cell.selectedBackgroundView=[[UIView alloc]initWithFrame:cell.frame];
     cell.backgroundColor=[UIColor clearColor];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -41,7 +42,7 @@
         make.bottom.equalTo(self.contentView.mas_bottom);
         make.left.equalTo(self.contentView.mas_left).offset(10);
         make.right.equalTo(self.contentView.mas_right).offset(-10);
-
+        
     }];
     
     [_nameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -57,7 +58,7 @@
         make.width.mas_equalTo(@(80));
         make.centerX.mas_equalTo(self.bgView.mas_centerX);
     }];
-
+    
     [_topLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.bgView.mas_top);
         make.right.equalTo(self.bgView.mas_right).offset(-10);
@@ -69,7 +70,7 @@
         make.top.equalTo(self.nameLabel.mas_bottom);
         make.left.equalTo(self.bgView.mas_left).offset(10);
         make.right.equalTo(self.bgView.mas_right).offset(-10);
-        make.height.mas_equalTo(@(50));
+        make.height.mas_equalTo(@(30));
     }];
     
     [_bottomLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -78,32 +79,32 @@
         make.height.mas_equalTo(@(30));
         make.width.mas_equalTo(@(70));
     }];
-
-
-
-
+    
+    
+    
+    
     [_leftView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.bottomView.mas_top).offset(0.5);
         make.bottom.equalTo(self.bottomView.mas_bottom).offset(-0.5);
         make.left.equalTo(self.bottomView.mas_left);
         make.width.mas_equalTo(@(60));
     }];
-
+    
     [_rightView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.bottomView.mas_top).offset(0.5);
         make.bottom.equalTo(self.bottomView.mas_bottom).offset(-0.5);
         make.right.equalTo(self.bottomView.mas_right);
         make.width.mas_equalTo(@(60));
-
+        
     }];
-
+    
     [_resultView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.bottom.equalTo(self.bottomView.mas_bottom);
         make.height.mas_equalTo(@(30));
         make.width.mas_equalTo(@(130));
         make.centerX.mas_equalTo(self.bottomView.mas_centerX);
     }];
-
+    
     
     [super updateConstraints];
 }
@@ -166,7 +167,7 @@
         titleLabel.textColor=[UIColor grayColor];
         titleLabel.font = [UIFont systemFontOfSize:14];
         titleLabel.textAlignment = NSTextAlignmentLeft;
-        titleLabel.text = @"收缩压:";
+        titleLabel.text = @"舒张压:";
         [self.bgView addSubview:titleLabel];
         _nameLabel= titleLabel;
     }
@@ -179,7 +180,7 @@
         titleLabel.textColor=[UIColor greenColor];
         titleLabel.font = [UIFont systemFontOfSize:13];
         titleLabel.textAlignment = NSTextAlignmentRight;
-        titleLabel.text = @"140mmhg";
+        titleLabel.text = @"90mmhg";
         [self.bgView addSubview:titleLabel];
         _topLabel= titleLabel;
     }
@@ -192,7 +193,7 @@
         titleLabel.textColor=[UIColor greenColor];
         titleLabel.font = [UIFont systemFontOfSize:13];
         titleLabel.textAlignment = NSTextAlignmentRight;
-        titleLabel.text = @"90mmhg";
+        titleLabel.text = @"60mmhg";
         [self.bgView addSubview:titleLabel];
         _bottomLabel= titleLabel;
     }
@@ -218,7 +219,6 @@
 //    [_imgView ideago_setImageWithURL:model.img placeholderImage:[UIImage imageNamed:@"placeholder1"]];
 //    _titleLabel.text = model.title;
 //}
-
 
 
 @end

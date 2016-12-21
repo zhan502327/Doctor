@@ -10,6 +10,6 @@
 
 @interface IWProfileSecondViewController : UIViewController
 
-@property (nonatomic, assign) int type;
+@property (nonatomic, strong) NSIndexPath *index;
 
 @end

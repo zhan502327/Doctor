@@ -224,6 +224,8 @@
     IWProfileInfoModel *model = dataSource.firstObject;
 
 
+    
+    
     if (indexPath.section == 0) {
         NSArray *titleArray = @[@"姓名",@"与本账户关系",@"性别",@"出生日期",@"社区",@"所属区域",];
         NSArray *resultArray;
@@ -490,8 +492,8 @@
             
             IWProfileSecondViewController *vc = [[IWProfileSecondViewController alloc] init];
             vc.title = NSLocalizedString(titleArray[indexPath.row], nil);
+            vc.index = indexPath;
             [self.navigationController pushViewController:vc animated:YES];
-            
             
         }
         
@@ -504,6 +506,8 @@
        
             IWProfileSecondViewController *vc = [[IWProfileSecondViewController alloc] init];
             vc.title = NSLocalizedString(titleArray[indexPath.row], nil);
+            vc.index = indexPath;
+
             [self.navigationController pushViewController:vc animated:YES];
             
         }
@@ -515,6 +519,8 @@
         if (indexPath.row == 0) {
             IWProfileSecondViewController *vc = [[IWProfileSecondViewController alloc] init];
             vc.title = NSLocalizedString(titleArray[indexPath.row], nil);
+            vc.index = indexPath;
+
             [self.navigationController pushViewController:vc animated:YES];;
         }
     }

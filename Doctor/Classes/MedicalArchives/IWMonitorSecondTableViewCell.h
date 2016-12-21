@@ -10,9 +10,25 @@
 
 @interface IWMonitorSecondTableViewCell : UITableViewCell
 
-//@property (nonatomic, strong) ModelClass *model;
-@property (nonatomic, weak) UIImageView *vv;
-@property (nonatomic, weak) UILabel *titleLabel;
+
+//@property (nonatomic, strong) <#ModelClass#> *model;
+@property (nonatomic, weak) UILabel *nameLabel;
+@property (nonatomic, weak) UILabel *rightLabel;
+@property (nonatomic, weak) UILabel *resultLabel;
+
+
+@property (nonatomic, weak) UIView *bgView;
+
+@property (nonatomic, weak) UIView *lineView;
+@property (nonatomic, weak) UIView *resultView;
+
+
+
+
+
+
+
 + (instancetype)normalTableViewCellWithTableView:(UITableView *)tableView;
+
 
 @end
