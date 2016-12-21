@@ -45,7 +45,7 @@
     [_resultLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.contentView.mas_top);
         make.bottom.equalTo(self.contentView.mas_bottom);
-        make.right.equalTo(_arrowImageView.mas_left);
+        make.right.equalTo(_arrowImageView.mas_left).offset(-10);
         make.width.mas_equalTo(@(200));
     }];
     
@@ -84,9 +84,12 @@
 -(UILabel *)resultLabel{
     if (_resultLabel == nil) {
         UILabel *titleLabel = [[UILabel alloc] init];
-        titleLabel.backgroundColor = [UIColor cyanColor];
+        titleLabel.backgroundColor = [UIColor whiteColor];
         titleLabel.textAlignment = NSTextAlignmentRight;
-        titleLabel.textColor=[UIColor blackColor];
+        titleLabel.textColor=[UIColor grayColor];
+        
+        titleLabel.font = [UIFont systemFontOfSize:14];
+
         [self.contentView addSubview:titleLabel];
         
         _resultLabel= titleLabel;

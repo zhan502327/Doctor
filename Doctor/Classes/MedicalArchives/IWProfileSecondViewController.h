@@ -10,4 +10,6 @@
 
 @interface IWProfileSecondViewController : UIViewController
 
+@property (nonatomic, assign) int type;
+
 @end

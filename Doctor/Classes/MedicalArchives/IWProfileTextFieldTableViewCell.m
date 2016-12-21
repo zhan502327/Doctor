@@ -89,7 +89,7 @@
         textField.tintColor = [UIColor whiteColor];
 //        textField.delegate = self;
         textField.font = [UIFont systemFontOfSize:14];
-        textField.placeholder = @"请输入你需要的地址";
+//        textField.placeholder = @"请输入你需要的地址";
         textField.textAlignment = NSTextAlignmentRight;
         [self.contentView addSubview:textField];
         _newsTextField = textField;

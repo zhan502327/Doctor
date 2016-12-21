@@ -11,7 +11,7 @@ DEPENDENCIES:
   - DACircularProgress (~> 2.3.1)
   - Masonry
   - MJRefresh (~> 3.1.12)
-  - SDWebImage (~> 3.8.2)
+  - SDWebImage
   - SVProgressHUD (~> 2.1.2)
 
 SPEC CHECKSUMS:
@@ -21,6 +21,6 @@ SPEC CHECKSUMS:
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
 
-PODFILE CHECKSUM: 3be3286cc85576a8c691753f6df513737ba3b639
+PODFILE CHECKSUM: 173b40ad0cb47fdcfe785aea7ce929a44f9f2630
 
 COCOAPODS: 1.1.1

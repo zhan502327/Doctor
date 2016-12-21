@@ -261,6 +261,8 @@
 		EC6289D81E08343C000AA8B8 /* IWProfileSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6289D71E08343C000AA8B8 /* IWProfileSecondViewController.m */; };
 		EC6289DE1E08DF6C000AA8B8 /* IMJIETagFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6289DB1E08DF6C000AA8B8 /* IMJIETagFrame.m */; };
 		EC6289DF1E08DF6C000AA8B8 /* IMJIETagView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6289DD1E08DF6C000AA8B8 /* IMJIETagView.m */; };
+		EC6289F11E093E22000AA8B8 /* IWHealhFileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6289F01E093E22000AA8B8 /* IWHealhFileModel.m */; };
+		EC6289F41E095A6D000AA8B8 /* IWProfileInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6289F31E095A6D000AA8B8 /* IWProfileInfoModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -318,7 +320,7 @@
 		C3835E971E04EABD0029BC24 /* IWUserInfoResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWUserInfoResult.m; sourceTree = "<group>"; };
 		C3835EA51E04EAF20029BC24 /* IWHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWHttpTool.h; sourceTree = "<group>"; };
 		C3835EA61E04EAF20029BC24 /* IWHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWHttpTool.m; sourceTree = "<group>"; };
-		C3835EA71E04EAF20029BC24 /* IWToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWToast.h; sourceTree = "<group>"; };
+		C3835EA71E04EAF20029BC24 /* IWToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IWToast.h; path = Tool/IWToast.h; sourceTree = "<group>"; };
 		C3835EA81E04EAF20029BC24 /* IWToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWToast.m; sourceTree = "<group>"; };
 		C3835EAC1E04EB6E0029BC24 /* NSDate+IW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+IW.h"; sourceTree = "<group>"; };
 		C3835EAD1E04EB6E0029BC24 /* NSDate+IW.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+IW.m"; sourceTree = "<group>"; };
@@ -770,6 +772,10 @@
 		EC6289DB1E08DF6C000AA8B8 /* IMJIETagFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMJIETagFrame.m; sourceTree = "<group>"; };
 		EC6289DC1E08DF6C000AA8B8 /* IMJIETagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMJIETagView.h; sourceTree = "<group>"; };
 		EC6289DD1E08DF6C000AA8B8 /* IMJIETagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMJIETagView.m; sourceTree = "<group>"; };
+		EC6289EF1E093E22000AA8B8 /* IWHealhFileModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWHealhFileModel.h; sourceTree = "<group>"; };
+		EC6289F01E093E22000AA8B8 /* IWHealhFileModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWHealhFileModel.m; sourceTree = "<group>"; };
+		EC6289F21E095A6D000AA8B8 /* IWProfileInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWProfileInfoModel.h; sourceTree = "<group>"; };
+		EC6289F31E095A6D000AA8B8 /* IWProfileInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWProfileInfoModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -943,7 +949,6 @@
 			children = (
 				C3835EA51E04EAF20029BC24 /* IWHttpTool.h */,
 				C3835EA61E04EAF20029BC24 /* IWHttpTool.m */,
-				C3835EA71E04EAF20029BC24 /* IWToast.h */,
 				C3835EA81E04EAF20029BC24 /* IWToast.m */,
 			);
 			path = Tool;
@@ -2299,6 +2304,7 @@
 				C39E19D21E04DC9B005AC04A /* AppDelegate.h */,
 				C39E19D31E04DC9B005AC04A /* AppDelegate.m */,
 				C39E19D41E04DC9B005AC04A /* main.m */,
+				C3835EA71E04EAF20029BC24 /* IWToast.h */,
 				C39E19D71E04DCDF005AC04A /* Doctor-Prefix.pch */,
 				C39E19D81E04DDBC005AC04A /* IWCommon.h */,
 			);
@@ -2336,6 +2342,8 @@
 		EC62899F1E06648D000AA8B8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EC6289EF1E093E22000AA8B8 /* IWHealhFileModel.h */,
+				EC6289F01E093E22000AA8B8 /* IWHealhFileModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -2381,6 +2389,8 @@
 		EC6289B81E06F02E000AA8B8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EC6289F21E095A6D000AA8B8 /* IWProfileInfoModel.h */,
+				EC6289F31E095A6D000AA8B8 /* IWProfileInfoModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -2659,6 +2669,7 @@
 				C38360401E05003E0029BC24 /* IWCompanyDetailResult.m in Sources */,
 				C38360191E04EFB30029BC24 /* AFHTTPSessionManager.m in Sources */,
 				C383601B1E04EFB30029BC24 /* AFSecurityPolicy.m in Sources */,
+				EC6289F11E093E22000AA8B8 /* IWHealhFileModel.m in Sources */,
 				C38361B41E063E800029BC24 /* IWBannerCell.m in Sources */,
 				C3835F551E04EC610029BC24 /* IWAboutViewController.m in Sources */,
 				C3835EA31E04EABD0029BC24 /* IWUserInfoResult.m in Sources */,
@@ -2779,6 +2790,7 @@
 				C39E19D51E04DC9B005AC04A /* AppDelegate.m in Sources */,
 				C38360431E05003E0029BC24 /* IWHomeDetailResult.m in Sources */,
 				C38360A01E0502F40029BC24 /* IWTextView.m in Sources */,
+				EC6289F41E095A6D000AA8B8 /* IWProfileInfoModel.m in Sources */,
 				C3835F641E04EC610029BC24 /* IWMeViewController.m in Sources */,
 				C3835F6C1E04EC610029BC24 /* IWChangeCellPhoneParam.m in Sources */,
 				C3835E9F1E04EABD0029BC24 /* IWRegisterScParam.m in Sources */,

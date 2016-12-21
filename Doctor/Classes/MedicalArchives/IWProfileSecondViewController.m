@@ -11,9 +11,8 @@
 #import "IMJIETagView.h"
 @interface IWProfileSecondViewController ()<IMJIETagViewDelegate>
 
-@property (nonatomic, strong) NSMutableArray *titleArray;
-@property (nonatomic, weak) UIButton *saveButton;
-@property (nonatomic, strong) IMJIETagFrame *tagViewFrame;
+@property (nonatomic, strong) NSArray *titleArray;
+@property (nonatomic, strong) UIButton *saveButton;
 
 
 
@@ -32,18 +31,17 @@
     //创建标签视图
     [self createUI];
     
-
-    //懒加载
-    [self saveButton];
     
+    
+    
+    self.type = 1;
 }
 
 - (void)initData
 {
-    self.titleArray = [NSMutableArray arrayWithCapacity:0];
     NSArray *array = @[@"code4app",@"轻音少女",@"花季少女",@"我们仍未知道那天所看见的花的名字",@"华语",@"花有重开日",@"空之境界"];
-    [self.titleArray addObjectsFromArray:array];
-    
+
+    self.titleArray = array;
     
 }
 
@@ -53,7 +51,6 @@
     frame.tagsMargin = 10;
     frame.tagsLineSpacing = 10;
     frame.tagsArray = self.titleArray;
-    self.tagViewFrame = frame;
     
     IMJIETagView *tagView = [[IMJIETagView alloc] initWithFrame:CGRectMake(0, 10, SCREEN_WIDTH, frame.tagsHeight)];
     tagView.clickbool = YES;
@@ -66,30 +63,71 @@
     tagView.delegate = self;
     [self.view addSubview:tagView];
     
+    [self setupSaveBtnWithFrame:frame];
     
 }
 
-#pragma mark - 懒加载控件
+#pragma mark - 创建saveBtn
+- (void)setupSaveBtnWithFrame:(IMJIETagFrame *)frame
+{
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.frame = CGRectMake(10, frame.tagsHeight + 20, self.view.frame.size.width - 20, 40);
+    [button addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [button setTitle:@"保存" forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    button.layer.masksToBounds = YES;
+    button.layer.cornerRadius = 10;
+    
+    NSArray *imageNameArray = @[@"t_btn_normal",@"t_btn_press"];
+    for (int i = 0; i<2; i++) {
+        // 加载图片
+        UIImage *image = [UIImage imageNamed:imageNameArray[i]];
+        // 设置端盖的值
+        CGFloat top = image.size.height * 0.5;
+        CGFloat left = image.size.width * 0.5;
+        CGFloat bottom = image.size.height * 0.5;
+        CGFloat right = image.size.width * 0.5;
+        UIEdgeInsets edgeInsets = UIEdgeInsetsMake(top, left, bottom, right);
+        // 拉伸图片
+        UIImage *newImage = [image resizableImageWithCapInsets:edgeInsets];
+        
+        if (i == 0) {
+            [button setBackgroundImage:newImage forState:UIControlStateNormal];
 
--(UIButton *)saveButton{
-    if (_saveButton == nil) {
-        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-        button.backgroundColor=[UIColor clearColor];
-        [button addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
-        [button setTitle:@"保存" forState:UIControlStateNormal];
-        [self.view addSubview:button];
-        _saveButton=button;
+        }else
+        {
+            [button setBackgroundImage:newImage forState:UIControlStateHighlighted];
+        }
     }
-    return _saveButton;
+    
+    [self.view addSubview:button];
+    _saveButton=button;
+    
 }
+
 //点击事件
 -(void)buttonClicked:(UIButton *)button{
+    NSLog(@"buttonClicked");
+    
+    
+    
 }
+
 
 #pragma mark 选中
 -(void)IMJIETagView:(NSArray *)tagArray{
     
     NSLog(@"%@",tagArray);
+    
+    for (int i = 0; i<tagArray.count; i++) {
+        int n = [tagArray[i] intValue];
+        
+        NSLog(@"%@",self.titleArray[n]);
+        
+        
+
+    }
+    
 }
 
 

@@ -18,6 +18,10 @@
 #import "IWUser.h"
 #import "IWUserTool.h"
 #import "Masonry.h"
+#import "IWHttpTool.h"
+#import "UIImageView+WebCache.h"
+#import "MBProgressHUD.h"
+#import "MBProgressHUD+MJ.h"
 
 #endif
 

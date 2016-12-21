@@ -62,14 +62,11 @@
 
 - (void)familyHealthFileBtnClicked:(UIButton *)btn
 {
-    
+ 
+
     IWHealthFileViewController *vc = [[IWHealthFileViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
-    
-    
-    
-    
-    
+ 
     
 }
 - (void)didReceiveMemoryWarning {

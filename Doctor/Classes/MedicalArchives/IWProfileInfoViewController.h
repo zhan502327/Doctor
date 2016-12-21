@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "IWHealhFileModel.h"
+
 
 @interface IWProfileInfoViewController : UIViewController
+
+@property (nonatomic, strong) IWHealhFileModel *model;
 
 @end

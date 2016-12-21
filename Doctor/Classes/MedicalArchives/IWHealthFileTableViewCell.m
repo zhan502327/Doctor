@@ -41,7 +41,6 @@
 -(UIImageView *)iconImageView{
     if (_iconImageView == nil) {
         UIImageView *imageView = [[UIImageView alloc] init];
-        imageView.backgroundColor = [UIColor redColor];
         [self.contentView addSubview:imageView];
         _iconImageView = imageView;
     }
@@ -50,7 +49,6 @@
 -(UIImageView *)sexImageView{
     if (_sexImageView == nil) {
         UIImageView *imageView = [[UIImageView alloc] init];
-        imageView.backgroundColor = [UIColor redColor];
         [self.contentView addSubview:imageView];
         _sexImageView = imageView;
     }
@@ -60,9 +58,9 @@
 -(UILabel *)nameLabel{
     if (_nameLabel == nil) {
         UILabel *label = [[UILabel alloc] init];
-        label.backgroundColor = [UIColor redColor];
-        label.textColor = [UIColor whiteColor];
-        
+        label.textColor = [UIColor blackColor];
+        label.font = [UIFont systemFontOfSize:14];
+
         [self.contentView addSubview:label];
         _nameLabel = label;
     }
@@ -72,9 +70,8 @@
 -(UILabel *)familyLabel{
     if (_familyLabel == nil) {
         UILabel *label = [[UILabel alloc] init];
-        label.backgroundColor = [UIColor redColor];
-        label.textColor = [UIColor whiteColor];
-        
+        label.textColor = [UIColor blueColor];
+        label.font = [UIFont systemFontOfSize:14];
         [self.contentView addSubview:label];
         _familyLabel = label;
     }
@@ -237,10 +234,10 @@
     }];
     
     [_sexImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(_iconImageView.mas_top);
+        make.top.equalTo(_iconImageView.mas_top).offset(5);
         make.left.equalTo(_nameLabel.mas_right).offset(Gap);
-        make.width.mas_equalTo(@(30));
-        make.height.mas_equalTo(@(30));
+        make.width.mas_equalTo(@(15));
+        make.height.mas_equalTo(@(15));
         
         
     }];
@@ -324,16 +321,35 @@
 
 
 
-
-
-
 #pragma mark -数据处理
-//- (void)setModel:(<#ModelClass#> *)model
-//{
-//    _model = model;
-//    [_imgView ideago_setImageWithURL:model.img placeholderImage:[UIImage imageNamed:@"placeholder1"]];
-//    _titleLabel.text = model.title;
-//}
+- (void)setModel:(IWHealhFileModel *)model
+{
+    _model = model;
+  
+    [self.iconImageView sd_setImageWithURL:[NSURL URLWithString:model.photo]];
+    
+    
+    self.nameLabel.text = model.name;
+    
+    if ([model.relationship intValue]== 0) {
+        self.familyLabel.text = @"本人";
+    }else if ([model.relationship intValue]== 1)
+    {
+        self.familyLabel.text = @"家人";
+    }else{
+        self.familyLabel.text = @"其他";
+
+    }
+    
+    if ([model.gender isEqualToString:@"男"]) {
+        self.sexImageView.image = [UIImage imageNamed:@"boy_icon"];
+    }else{
+        self.sexImageView.image = [UIImage imageNamed:@"girl_icon"];
+
+    }
+    
+    
+}
 
 
 

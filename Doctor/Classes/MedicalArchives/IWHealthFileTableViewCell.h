@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "IWHealhFileModel.h"
 
 @interface IWHealthFileTableViewCell : UITableViewCell
 
@@ -29,7 +30,7 @@
 @property (nonatomic, copy) void(^thirdBtnBlock)();
 
 
-
+@property (nonatomic, strong) IWHealhFileModel *model;
 + (instancetype)normalTableViewCellWithTableView:(UITableView *)tableView;
 
 
