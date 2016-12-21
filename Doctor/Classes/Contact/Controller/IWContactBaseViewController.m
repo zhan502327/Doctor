@@ -50,14 +50,8 @@
             NSRange range = NSMakeRange(0, last.location);
             [attrStr addAttributes:attrs range:range];
         }
-        
-        
-        
         label.attributedText = attrStr;
-
     }
-    
-    
 }
 
 - (void)setNTitle:(NSString *)nTitle {
