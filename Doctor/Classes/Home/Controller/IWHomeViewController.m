@@ -20,9 +20,11 @@
 
 @interface IWHomeViewController ()
 @property (nonatomic, weak) IWScrollHeaderView *scrollhHeaderView;
-
-@property (nonatomic, weak) UIButton *familyHealthFileBtn;
-
+@property (weak, nonatomic) IBOutlet UIView *mainView;
+- (IBAction)loadMedicalArchives:(UIButton *)sender;
+- (IBAction)loadTrainning:(UIButton *)sender;
+- (IBAction)loadDoctorSign:(UIButton *)sender;
+- (IBAction)loadNnpList:(UIButton *)sender;
 
 
 @end
@@ -33,42 +35,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-
-//    self.title = @"";
-    
     // 设置基本属性
     [self setupBase];
     
-    [self familyHealthFileBtn];
     
 }
 
-- (UIButton *)familyHealthFileBtn
-{
-    if (_familyHealthFileBtn == nil) {
-        UIButton *button = [[UIButton alloc] init];
-        [button setTitle:@"家庭健康档案" forState:UIControlStateNormal];
-        button.backgroundColor = [UIColor greenColor];
-        button.frame = CGRectMake(30, 200, 150, 100);
-        [button addTarget:self action:@selector(familyHealthFileBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
-        [self.view addSubview:button];
-        
-        _familyHealthFileBtn = button;
-        
-        
-    }
-    return _familyHealthFileBtn;
-}
-
-- (void)familyHealthFileBtnClicked:(UIButton *)btn
-{
- 
-
-    IWHealthFileViewController *vc = [[IWHealthFileViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
- 
-    
-}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -91,9 +63,28 @@
 }
 
 - (void)setupBase {
-    self.navigationItem.title = NSLocalizedString(@"家庭医生", nil);
+
+    self.navigationItem.title = NSLocalizedString(@"family_doctor", nil);
+    
+    // 中间的view
 }
 
 
 
+- (IBAction)loadMedicalArchives:(UIButton *)sender {
+
+    IWHealthFileViewController *vc = [[IWHealthFileViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+    
+    
+}
+
+- (IBAction)loadTrainning:(UIButton *)sender {
+}
+
+- (IBAction)loadDoctorSign:(UIButton *)sender {
+}
+
+- (IBAction)loadNnpList:(UIButton *)sender {
+}
 @end
