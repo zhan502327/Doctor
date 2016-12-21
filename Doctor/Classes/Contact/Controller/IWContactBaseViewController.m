@@ -42,8 +42,8 @@
         result = [NSString stringWithFormat:@"%@->%@", title, self.nTitle];
     }
     
-    NSDictionary *attrs = @{ NSForegroundColorAttributeName : IWGlobalColor };
     if (result != nil) {
+        NSDictionary *attrs = @{ NSForegroundColorAttributeName : IWGlobalColor };
         NSMutableAttributedString *attrStr = [[NSMutableAttributedString alloc] initWithString:result];
         NSRange last = [result rangeOfString:@"->" options:NSBackwardsSearch];
         if (last.location != NSNotFound) {
@@ -52,7 +52,6 @@
         }
         label.attributedText = attrStr;
     }
-    
 }
 
 - (void)setNTitle:(NSString *)nTitle {

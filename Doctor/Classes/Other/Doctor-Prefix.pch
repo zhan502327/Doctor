@@ -17,6 +17,12 @@
 #import "IWCommon.h"
 #import "IWUser.h"
 #import "IWUserTool.h"
+#import "Masonry.h"
+#import "IWHttpTool.h"
+#import "UIImageView+WebCache.h"
+#import "MBProgressHUD.h"
+#import "MBProgressHUD+MJ.h"
+
 #endif
 
 #endif /* Doctor_Prefix_pch */
